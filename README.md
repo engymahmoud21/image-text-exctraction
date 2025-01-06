@@ -46,6 +46,31 @@ The extracted text will be saved in a JSON file like this:
 }
 ```
 
+## how to use for the 2 Usage
+1. Save your image file in a known location.
+2. Run the script with the following command:
+   ```bash
+   python script.py <image_path> <output_json_path>
+   ```
+   - `<image_path>`: Path to the image file you want to process.
+   - `<output_json_path>`: Path to save the JSON file containing the extracted text.
+
+### Example
+```bash
+python script.py sample_image.png output.json
+```
+
+This will extract the text from `sample_image.png` and save it to `output.json`.
+
+## Output
+The output JSON file will have the following structure:
+```json
+{
+    "extracted_text": "Your extracted text here."
+}
+```
+
+
 ## Error Handling
 If the image file is not found at the specified path, you will get an error message. Make sure the image path is correct..
 
