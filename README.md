@@ -18,13 +18,23 @@ This Python script extracts text from an image file and saves it to a JSON file.
    ```
 
 ## Usage
-1. Save your image file in a known location.
-2. Run the script with the following command:
-   ```bash
-   python script.py <image_path> <output_json_path>
-   ```
-   - `<image_path>`: Path to the image file you want to process.
-   - `<output_json_path>`: Path to save the JSON file containing the extracted text.
+1. Modify the Image Path and Output File Path
+At the beginning of the program, you will find the following lines where the image path and the output file path are defined:
+
+image_path = "C:/Users/Enjy/Downloads/New folder/i.png"  # Replace with your image path
+output_json_path = "C:/Users/Enjy/Downloads/New folder/output.json"  # Replace with your desired JSON output path
+2. Run the Program
+After ensuring the image and JSON file paths are correct, run the program. The program will:
+
+Read the image from the specified path.
+Extract text using Tesseract OCR.
+Save the extracted text into a JSON file.
+3. Output JSON File Format
+After running the program successfully, the extracted text will be saved in a JSON file in the following format:
+
+{
+    "extracted_text": "This will be the extracted text from the image"
+}
 
 ### Example
 ```bash
